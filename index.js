@@ -24,11 +24,10 @@ getPassword.addEventListener("click", function () {
 });
 
 savePassword.addEventListener("click", function () {
-  document.title = password.value;
   savePassword.setAttribute(
     "href",
     "data:text/plain;charset=utf-8," +
-      encodeURIComponent(`password saya: ${document.title}`)
+      encodeURIComponent(`password saya: ${password.value}`)
   );
   savePassword.setAttribute("download", "MyPasswordGeneratorLOG.txt");
 });
