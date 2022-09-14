@@ -1,3 +1,4 @@
+// Character
 const upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
 const numeric = "0123456789";
@@ -7,7 +8,6 @@ const symbol = "!@#$%^&*()_+=-{}[]';:/?.,<>~`";
 const savePassword = document.querySelector(".btn-save");
 
 // Selector Toggle && Input
-
 // Input
 const totalChar = document.getElementById("passwordLength");
 const passwordBox = document.getElementById("password");
