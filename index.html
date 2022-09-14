@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <title>Password Generator RSyah</title>
+    <title>Password Generator</title>
 </head>
 
 <style>
@@ -37,10 +37,26 @@
             <h1 class="mb-5 text-center fw-bold">PASSWORD GENERATOR</h1>
             <div class="d-flex flex-column gap-2">
                 <label for="passwordLength" class="text-uppercase fw-bold">Password Length</label>
-                <input type="range" id="passwordLength" class="form-range" min="8" max="36" value="22" onchange="updateTextInput(this.value);">
-                <input type="text" id="value-range" value="22" class="form-control border-0 shadow-none text-center bg-transparent bg-opacity-50 fw-bold" disabled>
+                <input type="range" id="passwordLength" class="form-range" min="8" max="36" value="8" onchange="updateTextInput(this.value);">
+                <input type="text" id="value-range" value="8" class="form-control border-0 shadow-none text-center bg-transparent bg-opacity-50 fw-bold" disabled>
                 <label for="password" class="text-uppercase fw-bold">Password</label>
                 <input type="text" id="password" class="form-control shadow-sm" autocomplete="off" disabled>
+                <div class="p-0 form-check form-switch d-flex justify-content-between">
+                    <label class="form-check-label fw-bold text-uppercase" for="Upper-case">Uppercase</label>
+                    <input class="form-check-input shadow-sm" type="checkbox" role="switch" id="Upper-case" checked>
+                </div>
+                <div class="p-0 form-check form-switch d-flex justify-content-between">
+                    <label class="form-check-label fw-bold text-uppercase" for="Lower-case">Lowercase</label>
+                    <input class="form-check-input shadow-sm" type="checkbox" role="switch" id="Lower-case" checked>
+                </div>
+                <div class="p-0 form-check form-switch d-flex justify-content-between">
+                    <label class="form-check-label fw-bold text-uppercase" for="Numbers">Numeric</label>
+                    <input class="form-check-input shadow-sm" type="checkbox" role="switch" id="Numbers" checked>
+                </div>
+                <div class="p-0 form-check form-switch d-flex justify-content-between">
+                    <label class="form-check-label fw-bold text-uppercase" for="Symbols">Symbol</label>
+                    <input class="form-check-input shadow-sm" type="checkbox" role="switch" id="Symbols" checked>
+                </div>
                 <button class="btn btn-dark text-uppercase fw-bold mt-2 btn-gen">GENERATE PASSWORD</button>
                 <a class="btn btn-primary text-uppercase fw-bold mt-2 btn-save">SAVE PASSWORD</a>
             </div>
